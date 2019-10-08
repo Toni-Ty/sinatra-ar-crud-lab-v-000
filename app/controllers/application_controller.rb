@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
   end
 
   #renderd update form
-  get '/articles/#{@article1.id}' do
+  get '/articles/:id/edit' do
   @article = Article.find(params["id"])
   erb :edit
 end
