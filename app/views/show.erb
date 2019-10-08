@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1><%= @articles.name %></h1>
-    <p><%= @articles.content %></p>
+    <h1><%= @article.name %></h1>
+    <p><%= @article.content %></p>
     <br />
     <form method="post" action="/articles/<%= @article.id %>/delete">
       <input id="hidden" type="hidden" name="_method" value="delete">
