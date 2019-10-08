@@ -39,17 +39,17 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/articles/:id'  do
-    @articles = Article.find_by_id(params[:id])
-    @articles.name = params[:name]
-    @articles.content = params[:content]
-    @articles.save
+    @article = Article.find_by_id(params[:id])
+    @article.name = params[:name]
+    @article.content = params[:content]
+    @article.save
     erb :show
   end
 
 
     delete '/articles/:id/delete' do
-      @articles = Article.find(params[:id])
-      @articles.delete
+      @article = Article.find(params[:id])
+      @article.delete
       erb :delete
     end
   end
