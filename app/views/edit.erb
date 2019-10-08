@@ -4,10 +4,10 @@
     <form action="/articles/<%= @articles.id %>" method="POST">
       <input id="hidden" type="hidden" name="_method" value="patch">
       <label for "name">Name:</label>
-      <input type="text" id="name" name="name" value="<%= @article.name %>">
+      <input type="text" id="name" name="name" value="<%= @articles.name %>">
       <br />
       <label for "content">Content:</label>
-      <input type="text" id="content" name="content" value="<%= @article.content %>">
+      <input type="text" id="content" name="content" value="<%= @articles.content %>">
       <br />
       <input type="submit" value="submit" id="submit">
     </form>
