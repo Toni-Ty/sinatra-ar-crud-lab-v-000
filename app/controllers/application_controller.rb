@@ -12,12 +12,10 @@ class ApplicationController < Sinatra::Base
 
   end
 
-  #creates POST form
   get '/articles/new' do
     erb :new
   end
 
-# index articles
   post '/articles' do
       Post.create(params)
       redirect '/posts'
