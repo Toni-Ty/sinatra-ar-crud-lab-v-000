@@ -52,5 +52,3 @@ class ApplicationController < Sinatra::Base
       @article = Post.find(params[:id])
       @article.delete
       erb :delete
-
-  
