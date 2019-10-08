@@ -17,13 +17,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/articles' do
-      @articles = Article.create(params)
+      @article = Article.create(params)
       redirects to '/articles/:id'
     erb :show
   end
 
   get '/articles' do
-    @articles = Article.all
+    @article = Article.all
     erb :index
   end
 
