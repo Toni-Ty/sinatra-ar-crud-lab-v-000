@@ -3,8 +3,8 @@
   <body>
     <form action="/articles/<%= @articles.id %>" method="POST">
       <input id="hidden" type="hidden" name="_method" value="patch">
-      <label for "name">Name:</label>
-      <input type="text" id="name" name="name" value="<%= @articles.name %>">
+      <label for "name">Title:</label>
+      <input type="text" id="title" name="title" value="<%= @articles.name %>">
       <br />
       <label for "content">Content:</label>
       <input type="text" id="content" name="content" value="<%= @articles.content %>">
