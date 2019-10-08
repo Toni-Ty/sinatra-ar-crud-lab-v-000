@@ -53,4 +53,4 @@ class ApplicationController < Sinatra::Base
       @article.delete
       erb :delete
 
-  end
+  
