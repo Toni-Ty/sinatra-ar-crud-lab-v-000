@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/articles' do
-      Article.create(params[:content])
+      Article.create(content: params[:content])
       redirect '/posts'
     erb :show
   end
